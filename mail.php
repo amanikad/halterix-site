@@ -1,5 +1,4 @@
 <?php
-if(isset($_POST['submit'])){
 	mail("yw1hbmk@gmail.com", "just a test", "test message", "no headers here");
 	$to = "yw1hbmk@gmail.com";
 	$from = $_POST['email'];
@@ -12,4 +11,4 @@ if(isset($_POST['submit'])){
 	$headers2 = "From:" . $to;
 	mail($to, $subject, $message, $headers);
 	mail($from, $subject2, $message2, $headers2);
-}
+?>
