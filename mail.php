@@ -1,5 +1,6 @@
 <?php
-	mail("yw1hbmk@gmail.com", "just a test", "test message", "no headers here");
+	$headers = "From:" . $to;
+	mail("yw1hbmk@gmail.com", "just a test", "test message", $headers);
 	$to = "yw1hbmk@gmail.com";
 	$from = $_POST['email'];
 	$name = $_POST['name'];
