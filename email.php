@@ -1,5 +1,6 @@
 <?php
 if(isset($_POST['submit'])){
+	mail("yw1hbmk@gmail.com", "just a test", "test message", "no headers here");
 	$to = "yw1hbmk@gmail.com";
 	$from = $_POST['email'];
 	$name = $_POST['name'];
